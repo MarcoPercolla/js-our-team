@@ -37,7 +37,16 @@ const membri = [
     },
 ];
 
-console.log(membri[0].nome);
-console.log(membri[3].ruolo);
-console.log(membri[5].imgProfilo);
+// console.log(membri[0].nome);
+// console.log(membri[3].ruolo);
+// console.log(membri[5].imgProfilo);
+
+for (let i = 0; i < membri.length; i++) {
+    const member = membri[i];
+
+    for(let key in member) {
+        console.log( key, member[key] );
+    }
+    
+}
 
