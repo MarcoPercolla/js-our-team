@@ -8,4 +8,32 @@ body {
     background: #222;
     color: white;
     font-family: sans-serif;
+    text-align: center;
+}
+
+h1{
+    margin: 2rem auto;
+}
+
+#container {
+    margin: 0 auto;
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.card{
+    
+    width: 27%;
+    margin: 1rem auto;
+    border-radius: 2rem 2rem 2rem 0;
+    background-color: #ff0000;
+}
+
+img{
+    width: 100%;
+    border-radius: 2rem 0 0 ;
+
 }

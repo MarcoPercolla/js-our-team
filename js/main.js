@@ -1,3 +1,4 @@
+// creo array di oggetti 
 const membri = [
     {
         nome: "Wayne Barnett" ,
@@ -41,35 +42,27 @@ const membri = [
 // console.log(membri[3].ruolo);
 // console.log(membri[5].imgProfilo);
 
+// attraverso un ciclo for per ogni oggetto nell'array creo una carta 
 for (let i = 0; i < membri.length; i++) {
     
     // per ogni membro genero una carta
     document.getElementById("container").innerHTML += `<div class="card"></div>`;
 
-    // for(let key in member) {
 
-    //     console.log(key, member[key], "normale" );
-
-
-    //     if (key == "nome") {
-    //         console.log(key, member[key], "mirato" );
-    //     } else {
-    //         console.log(key, member[key], "non-mirato" );
-    //     }
-        
-    // };
-    
 };
 
+// dichiaro le carte appena create e aggiunte nel html 
 let cards = document.querySelectorAll(".card");
 
+// seleziono ogni card in "cards" tramite un ciclo for
 for (i = 0; i < cards.length; i++) {
     
+    // creo un immagine per ogni carta e ne definisco il src tramite la proprieta imgProfilo del oggetto (membro[i]) nell'array membri
     let immagine = document.createElement("img");
     immagine.src = membri[i].imgProfilo;
     cards[i].appendChild(immagine);
 
-    
+    // aggiungo nomee e ruolo alla card
     cards[i].innerHTML += `<h3>${membri[i].nome}</h3>`
     cards[i].innerHTML += `<p>${membri[i].ruolo}</p>`
 }
