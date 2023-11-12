@@ -42,7 +42,7 @@ const membri = [
 // console.log(membri[5].imgProfilo);
 
 for (let i = 0; i < membri.length; i++) {
-    var member = membri[i];
+    
     // per ogni membro genero una carta
     document.getElementById("container").innerHTML += `<div class="card"> card </div>`;
 
@@ -61,14 +61,15 @@ for (let i = 0; i < membri.length; i++) {
     
 };
 
-const cards = document.querySelectorAll(".card");
+let cards = document.querySelectorAll(".card");
+
 for (i = 0; i < cards.length; i++) {
     
     let immagine = document.createElement("img");
-    immagine.src = member.imgProfilo;
+    immagine.src = membri[i].imgProfilo;
     cards[i].appendChild(immagine);
 
     
-    cards[i].innerHTML += `<h3>${member.nome}</h3>`
-    cards[i].innerHTML += `<p>${member.ruolo}</p>`
+    cards[i].innerHTML += `<h3>${membri[i].nome}</h3>`
+    cards[i].innerHTML += `<p>${membri[i].ruolo}</p>`
 }
