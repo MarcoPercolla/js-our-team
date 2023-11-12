@@ -44,7 +44,7 @@ const membri = [
 for (let i = 0; i < membri.length; i++) {
     
     // per ogni membro genero una carta
-    document.getElementById("container").innerHTML += `<div class="card"> card </div>`;
+    document.getElementById("container").innerHTML += `<div class="card"></div>`;
 
     // for(let key in member) {
 
