@@ -43,16 +43,20 @@ const membri = [
 
 for (let i = 0; i < membri.length; i++) {
     const member = membri[i];
+    // per ogni membro genero una carta
+    document.getElementById("container").innerHTML += `<div class="card"> card </div>`;
 
-    for(let key in member) {
+    // for(let key in member) {
 
-        console.log(key, member[key], "normale" );
+    //     console.log(key, member[key], "normale" );
 
 
-        if (key == "nome") {
-            console.log(key, member[key], "mirato" );
-        }
+    //     if (key == "nome") {
+    //         console.log(key, member[key], "mirato" );
+    //     } else {
+    //         console.log(key, member[key], "non-mirato" );
+    //     }
         
-    };
+    // };
     
 };
