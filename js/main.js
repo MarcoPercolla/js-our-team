@@ -45,8 +45,14 @@ for (let i = 0; i < membri.length; i++) {
     const member = membri[i];
 
     for(let key in member) {
-        console.log( key, member[key] );
-    }
-    
-}
 
+        console.log(key, member[key], "normale" );
+
+
+        if (key == "nome") {
+            console.log(key, member[key], "mirato" );
+        }
+        
+    };
+    
+};
